@@ -139,7 +139,7 @@ class _DashboardState extends State<Dashboard> {
         width:double.infinity,decoration:BoxDecoration(color:Colors.black,
           borderRadius:BorderRadius.circular(30),border:Border.all(color:lavender.withValues(alpha:.25))),
         child:LayoutBuilder(builder:(context,box)=>CustomPaint(
-          painter:EyePainter(face),size:Size(box.maxWidth,box.maxHeight))))),
+          painter:EyePainter(face),size:Size(box.maxWidth,box.maxHeight)))))),
       Padding(padding:const EdgeInsets.symmetric(horizontal:16),child:Row(children:[
         Icon(Icons.circle,size:9,color:link.connected?Colors.greenAccent:Colors.orangeAccent),
         const SizedBox(width:7),Expanded(child:Text(link.status,maxLines:1,overflow:TextOverflow.ellipsis,
